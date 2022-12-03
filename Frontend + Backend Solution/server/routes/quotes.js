@@ -17,10 +17,7 @@ router.get("/", async (req, res, next) => {
 
 router.get("/random-quote", async (req, res, next) => {
   try {
-    const count = Quote.count();
-    const random = Math.floor(Math.random() * count);
-    await count;
-    const quote = await Quote.find({}).skip(random);
+    const quote = await Quote.aggregate([{ $sample: { size: 1 } }]);
     res.json(quote);
   } catch (error) {
     next(err.code);
