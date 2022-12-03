@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.buttonsDiv {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.home,
+.button {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  width: 120px;
+}
+.home {
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
+}
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.home:hover,
+.button:hover {
+  color: white;
+}
+
+.randomQuote {
+  margin: auto;
+  text-align: center;
+  box-shadow: 2px 2px 5px 5px #576875;
+  padding: 20px;
+  background-color: rgb(250, 211, 198);
+}
+.text {
+  font-weight: bold;
+}
+.author {
+  color: rgb(223, 126, 126);
+  font-size: larger;
+}

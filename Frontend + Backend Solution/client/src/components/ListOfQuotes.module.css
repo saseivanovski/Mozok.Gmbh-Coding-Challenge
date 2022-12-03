@@ -1,0 +1,41 @@
+body {
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  align-items: center;
+}
+.random {
+  text-decoration: none;
+  font-size: larger;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: rgb(235, 235, 86);
+  box-shadow: 1px 1px 2px 3px rgb(81, 78, 51);
+}
+.random:hover {
+  background-color: rgb(233, 233, 179);
+}
+
+table {
+  background-color: rgb(250, 211, 198);
+}
+thead {
+  background-color: rgb(91, 91, 91);
+  color: white;
+}
+td {
+  padding: 5px;
+  border-right: 1px solid rgba(80, 80, 80, 0.298);
+}
+table,
+th {
+  text-align: center;
+  border: 1px solid rgba(80, 80, 80, 0.298);
+  border-collapse: collapse;
+}
