@@ -8,8 +8,9 @@ function ListOfQuotes() {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState("");
 
-  //I show only 15 quotes (nationality api was limited on daily fetches)
-  let items = posts.slice(0, 15);
+  //I show only 20 quotes (nationalize.io api was limited on daily requests)
+  //It will work with as many as we want quotes
+  let items = posts.slice(0, 20);
 
   const handleFetchData = (data, state) => {
     if (state === "ok") {
@@ -48,7 +49,7 @@ function ListOfQuotes() {
                 <td>{ele.text}</td>
                 <td>{ele.author}</td>
                 <td>
-                  <Nationality name={ele.author.split(" ")[0]} />
+                  <Nationality name={ele.author} />
                 </td>
               </tr>
             );
